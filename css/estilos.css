@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+    
+}
+/*comienzan estilos generales*/
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: orangered;
+}
+
+button:hover{
+    background-color: rgb(187, 50, 0);
+}
+
+.color-acento{ color: orangered}
+/*finalizan estilos generales*/
+/*galeria*/
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+/*finaliza galeria*/
+/*comienza content  y contacto formulario*/
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.75em;
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    
+
+}
+
+.logo__content{
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo__content span{
+    color: orangered;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact-wrapper > * {
+    padding: 2.3em;
+}
+
+.contact-form{
+    background: rgb(22, 22, 22);
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1/3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid orangered;
+}
+
+.contact-form form button{
+    background: orangered;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: rgb(253, 79, 16);
+    color: black;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    background: black;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+   text-align: center;
+   margin: 0 0 1rem 0; 
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: .3em;
+}
+
+/*finaliza content y contacto formulario*/
+/*Comienza navegador*/
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: orangered;
+    font-size: 1.6em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: orangered;
+}
+/*Finaliza Navegador*/
+/*ubicacion*/
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center center;
+    
+}
+.map-responsive h1{
+    font-size: 25px;
+
+}   
+
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    justify-content:center;
+}   
+/*finaliza ubicacion*/
+
+/*comienza seccion hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+       0deg,
+       rgba(0, 0, 0, 0.5), 
+       rgba(0, 0, 0, 0.5) 
+    )
+    ,url(../img/camaro\ imagen\ mediana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+   font-size: 1.75em; 
+}
+/*finaliza seccion hero*/
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas h2{
+   margin-top: 0; 
+   font-size: 3.2em;
+}
+
+#nuestros-programas .container{
+   padding: 150px 12px;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 16px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+       0deg,
+       rgba(0, 0, 0, 0.5), 
+       rgba(0, 0, 0, 0.5) 
+    )
+    ,url(../img/conduccion\ papa.jpg);
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5) 
+     )
+     ,url(../img/reecoleccion.jpg);
+   
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5) 
+     )
+     ,url(../img/venta\ de\ autos34.jpg);
+     
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracterisiticas li{
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: orangered;
+
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: black;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    /*comienza contacto info*/
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper > *{
+        padding: 3em;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 2.4em;
+        text-align: left;
+    }
+    /*termina contacto info*/
+    /*comienza galeria*/
+   
+    .column{
+            flex: 30%;
+            
+        }
+    
+
+   
+        
+    
+    /*termina galeria*/
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-proya .texto{
+       width: 50%;
+       max-width: 600px;
+       text-align: initial;
+       padding-left: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center; 
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5) 
+     )
+     ,url(../img/hablanos.jpg);
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 400px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgb(30, 30, 30);
+    }
+
+    #caracteristicas{
+        background-image: url(../img/caracteriscas\ auto.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+   
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    #caracteristica{
+        background-position-x: calc(10vw - 800px);
+    }
+}
